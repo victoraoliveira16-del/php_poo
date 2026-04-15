@@ -39,9 +39,8 @@ class Poupanca extends Conta
 
     function __construct($numero, $saldo, $juros)
     {
-       $this->numero = $numero;
-       $this->saldo = $saldo;
-       $this->juros = $juros;
+        parent::__construct($numero, $saldo);
+        $this->juros = $juros;
     }
 
     function atualizarJuros()
